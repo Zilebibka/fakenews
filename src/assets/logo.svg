@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80">
+  <defs>
+    <style>
+      .blue { fill: #2196f3; }
+      .pink { fill: #f50057; }
+      @keyframes appear {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      text, path { animation: appear 1s forwards; }
+    </style>
+  </defs>
+  <text x="20" y="55" font-family="Montserrat, Arial, sans-serif" font-size="50" font-weight="800" letter-spacing="0">
+    <tspan class="blue">F</tspan>
+    <tspan class="pink">a</tspan>
+    <tspan class="blue">k</tspan>
+    <tspan class="pink">e</tspan>
+    <tspan class="blue">N</tspan>
+    <tspan class="pink">e</tspan>
+    <tspan class="blue">w</tspan>
+    <tspan class="pink">s</tspan>
+  </text>
+</svg> 
