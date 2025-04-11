@@ -1,0 +1,55 @@
+.news-generator {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.news-generator__title {
+  margin: 0 0 20px;
+  color: var(--text-primary);
+  font-size: 1.8rem;
+}
+
+.news-generator__controls {
+  display: flex;
+  gap: 16px;
+}
+
+.news-generator__select {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.news-generator__select:focus {
+  border-color: var(--primary);
+}
+
+.news-generator__button {
+  padding: 12px 24px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.news-generator__button:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.news-generator__button:disabled {
+  background: var(--disabled);
+  cursor: not-allowed;
+} 

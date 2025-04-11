@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useNews } from '../hooks/useNews';
 import { useTheme } from '../hooks/useTheme';
+import { FaHeart, FaShare, FaTrash } from 'react-icons/fa';
 import './NewsCard.css';
 
 const NewsCard = ({ news, showDeleteButton = false, onDelete }) => {
@@ -163,7 +164,7 @@ const NewsCard = ({ news, showDeleteButton = false, onDelete }) => {
               className={`news-card-action-btn ${isLiked() ? 'liked' : ''}`} 
               onClick={handleLike}
             >
-              <i className={`${isLiked() ? 'fas' : 'far'} fa-heart`}></i>
+              <FaHeart />
               {news.likes || 0}
             </button>
           </div>
